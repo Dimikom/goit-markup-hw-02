@@ -42,11 +42,14 @@ body a {
   top: 16px; /* первоначальное значение было 32рх*/
   width: 294px;
   height: 16px;
+  display: flex;
 }
 
 .menu-nav li {
   display: inline-block; /* Отображает меню как строчный элемент */
   text-decoration: none;
+  flex-basis: auto;
+  flex-grow: 1;
 }
 .menu-nav a {
   color: rgb(33, 33, 33);
@@ -71,7 +74,6 @@ body a {
   position: absolute;
   font-weight: 500;
   width: 135px;
-  height: 16px;
   left: 1078px;
   top: 32px;
 }
@@ -126,8 +128,6 @@ body a {
   left: 452px;
   top: 280px;
 
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -146,8 +146,15 @@ body a {
   left: 700px;
   top: 430px;
   radius: 4px;
+  /* background: rgba(33, 150, 243, 1);*/
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.slider button:hover {
+  background: rgb(24, 140, 232);
 }
 .slider button p {
+  color: rgba(255, 255, 255, 0);
   position: absolute;
   width: 136px;
   height: 30px;
@@ -165,6 +172,4 @@ body a {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-
-  color: #ffffff;
 }
