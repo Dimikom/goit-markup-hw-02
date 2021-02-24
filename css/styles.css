@@ -1,3 +1,170 @@
 body {
   font-family: 'Roboto', sans-serif;
+  color: rgba(33, 33, 33, 1);
+  text-decoration: none;
+}
+body a {
+  text-decoration: none;
+}
+/* top line background */
+.topline {
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: rgba(255, 255, 255, 1);
+}
+/* Webstudio logo style */
+.webstudio {
+  color: rgb(0, 0, 0);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+}
+.web {
+  color: rgb(33, 150, 243);
+}
+/* Menu Nav */
+.menu-nav {
+  color: rgb(33, 33, 33);
+  position: absolute;
+  font-weight: 500;
+  left: 453px;
+  top: 16px; /* первоначальное значение было 32рх*/
+  width: 294px;
+  height: 16px;
+}
+
+.menu-nav li {
+  display: inline-block; /* Отображает меню как строчный элемент */
+  text-decoration: none;
+}
+.menu-nav a {
+  color: rgb(33, 33, 33);
+}
+.menu-nav a[href='index.html'] {
+  width: 49px;
+  height: 16px;
+  left: 453px;
+}
+.menu-nav a[href='./portfolio.html'] {
+  width: 77px;
+  height: 16px;
+  left: 552px;
+}
+.menu-nav a:hover,
+.menu-nav a:focus {
+  color: rgb(33, 150, 243, 1);
+}
+/* Header e-mail */
+.contact-email {
+  list-style: none;
+  position: absolute;
+  font-weight: 500;
+  width: 135px;
+  height: 16px;
+  left: 1078px;
+  top: 32px;
+}
+.contact-email a {
+  color: rgb(117, 117, 117, 1);
+}
+.contact-email a:hover,
+.contact-email a:focus {
+  color: rgb(33, 150, 243);
+}
+/* header telephone number */
+.contact-tel {
+  position: absolute;
+  list-style: none;
+  font-weight: 500;
+  width: 122px;
+  height: 16px;
+  left: 1263px;
+  top: 32px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.contact-tel a {
+  color: rgb(117, 117, 117, 1);
+}
+/* Horizontal line under header*/
+.line {
+  border-bottom: 1px solid rgb(236, 236, 236, 1);
+  position: absolute;
+  width: 1600px;
+  height: 0px;
+  left: 0px;
+  top: 80px;
+}
+/*Слайдер эффективные решения для вашего бизнеса*/
+.slider {
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background: rgb(47, 48, 58);
+}
+.slider h1 {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: rgb(255, 255, 255);
+}
+.slider button {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  radius: 4px;
+}
+.slider button p {
+  position: absolute;
+  width: 136px;
+  height: 30px;
+  left: 732px;
+  top: 440px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
 }
