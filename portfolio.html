@@ -16,28 +16,35 @@
   <body>
     <!-- Шапка сайта -->
     <header>
-      <div class="topline"></div>
-      <!-- Логотип WebStudio -->
-      <a href="" lang="en" class="webstudio"
-        ><span class="web">Web</span>Studio</a
-      >
-      <!-- Главная навигация -->
-      <nav>
-        <ul class="header-menu">
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li>Контакты</li>
-        </ul>
-      </nav>
+      <div class="topline">
+        <!-- Логотип WebStudio -->
+        <a href="" lang="en" class="webstudio link">
+          <span class="web">Web</span>Studio</a
+        >
+        <!-- Главная навигация -->
+        <nav>
+          <ul class="menu-nav link">
+            <li><a href="index.html">Студия</a></li>
+            <li>
+              <a href="./portfolio.html">Портфолио</a>
+            </li>
+            <li>Контакты</li>
+          </ul>
+        </nav>
 
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+        <ul>
+          <li class="contact-email link">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="contact-tel">
+            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <!--секция фильтров-->
-      <div>
+      <section hidden>
         <ul>
           <li>
             <button type="button">Все</button>
@@ -55,7 +62,7 @@
             <button type="button">Маркетинг</button>
           </li>
         </ul>
-      </div>
+      </section>
       <!--секция проектов-->
       <section>
         <h2 hidden>Проекты</h2>

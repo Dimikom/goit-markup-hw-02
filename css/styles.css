@@ -1,11 +1,22 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  color: rgba(33, 33, 33, 1);
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
+  --active-color: rgb(33, 150, 243);
+}
+.link {
   text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+body {
+  font-family: var(--main-font);
+  color: rgba(33, 33, 33, 1);
 }
 body a {
   text-decoration: none;
 }
+/*===============HEADER=================*/
 /* top line background */
 .topline {
   position: absolute;
@@ -17,15 +28,13 @@ body a {
   padding-left: 15px; /* добавил */
   padding-right: 15px; /* добавил */
 }
-/* Webstudio logo style */
+/* Webstudio logo styles */
 .webstudio {
   color: rgb(0, 0, 0);
-  font-family: Raleway;
-  font-style: normal;
+  font-family: var(--logo-font);
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
-  text-decoration: none;
+  line-height: 1.19;
   position: absolute;
   width: 145px;
   height: 31px;
@@ -40,6 +49,7 @@ body a {
   color: rgb(33, 33, 33);
   position: absolute;
   font-weight: 500;
+  line-height: 1.17;
   left: 453px;
   top: 32px; /* первоначальное значение было 32рх*/
   width: 294px;
@@ -47,7 +57,6 @@ body a {
   display: flex;
   justify-content: space-between;
 }
-
 .menu-nav li {
   display: inline-block; /* Отображает меню как строчный элемент */
   text-decoration: none;
@@ -88,12 +97,13 @@ body a {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .contact-tel a {
   color: rgb(117, 117, 117, 1);
 }
+/*===============HEADER END=================*/
 /* Horizontal line under header*/
 .line {
   border-bottom: 1px solid rgb(236, 236, 236, 1);
@@ -103,7 +113,8 @@ body a {
   left: 0px;
   top: 80px;
 }
-/*Слайдер эффективные решения для вашего бизнеса*/
+/*================HERO===================*/
+/* Эффективные решения для вашего бизнеса*/
 .slider {
   position: absolute;
   width: 1600px;
@@ -112,7 +123,7 @@ body a {
   top: 80px;
   background: rgb(47, 48, 58);
 }
-.slider h1 {
+.slider-slogan {
   position: absolute;
   width: 696px;
   height: 120px;
@@ -121,42 +132,157 @@ body a {
 
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
+  line-height: 1.36;
 
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
-.slider button {
+.basic-btn {
   position: absolute;
   width: 200px;
   height: 50px;
   left: 700px;
   top: 430px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  /* background: rgba(33, 150, 243, 1);*/
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-.slider button:hover {
-  background: rgb(24, 140, 232);
-}
-.slider button p {
-  color: rgba(255, 255, 255, 0);
-  position: absolute;
-  width: 136px;
-  height: 30px;
-  left: 732px;
-  top: 440px;
+  line-height: 1.88;
 
-  /* identical to box height, or 187% */
-
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  background: rgba(33, 150, 243, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
 }
+.basic-btn:hover,
+.basic-btn:focus {
+  background: rgb(24, 140, 232);
+  cursor: pointer;
+}
+/*============OUR SPECIATILY========*/
+.our-spec {
+  position: absolute;
+  width: 1170px;
+  height: 101px;
+  left: 215px;
+  top: 774px;
+}
+.our-spec-item {
+  display: inline-block; /* Отображает меню как строчный элемент */
+  /*position: absolute;*/
+  width: 270px;
+  height: 101px;
+  top: 774px;
+}
+.our-spec-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /*  color: #212121; */
+}
+.our-spec-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/*============OUR SPECIATILY END========*/
+/*============OUR ACTIVITIES============*/
+.our-activities {
+  position: absolute; /*?*/
+  width: 1170px;
+  height: 386px;
+  left: 215px;
+  top: 969px;
+}
+.our-activities-title {
+  /* width: 376px;* убрал, так как не центрировался тайтл*/
+  height: 42px;
+  left: 612px;
+  top: 969px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  /*color: #212121;*/
+}
+.our-activities-list {
+}
+.our-activities-item {
+  display: inline-block;
+  width: 370px;
+  height: 294px;
+  top: 1061px;
+}
+/*============OUR ACTIVITIES END============*/
+/*============OUR TEAM============*/
+.our-team {
+  position: absolute;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
+
+  background: rgba(245, 244, 250, 0);
+}
+.our-team-title {
+  position: absolute;
+  width: auto; /* сам поставил */
+  height: 42px;
+  left: 668px;
+  top: 1543px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.our-team-list {
+  position: absolute;
+  width: 1170px;
+  height: 368px;
+  left: 215px;
+  top: 1635px;
+}
+.our-team-item {
+  display: inline-block;
+  width: 270px;
+  height: 368px;
+  top: 1635px;
+  border-radius: 0px;
+}
+.team-member-name {
+  /*position: absolute;
+  width: 151px;
+  height: 19px;
+  left: 275px;
+  top: 1925px;*/
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19; /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.team-member-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19; /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+/*============OUR TEAM END============*/

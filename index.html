@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
-    <link href="css/normalize.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -18,12 +18,12 @@
     <header>
       <div class="topline">
         <!-- Логотип WebStudio -->
-        <a href="" lang="en" class="webstudio">
+        <a href="" lang="en" class="webstudio link">
           <span class="web">Web</span>Studio</a
         >
         <!-- Главная навигация -->
         <nav>
-          <ul class="menu-nav">
+          <ul class="menu-nav link">
             <li><a href="index.html">Студия</a></li>
             <li>
               <a href="./portfolio.html">Портфолио</a>
@@ -33,7 +33,7 @@
         </nav>
 
         <ul>
-          <li class="contact-email">
+          <li class="contact-email link">
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li class="contact-tel">
@@ -46,49 +46,49 @@
     <main>
       <!-- Секция Решения для бизнеса к кнопкой Заказать -->
       <section class="slider">
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button>Заказать услугу</button>
+        <h1 class="slider-slogan">Эффективные решения для вашего бизнеса</h1>
+        <button class="basic-btn" type="button">Заказать услугу</button>
       </section>
-
       <!-- Секция особенностей - здесь 4 особенности -->
-      <div>
-        <ul>
-          <li>
-            <h3>Внимание к деталям</h3>
-            <p>
+      <section class="our-spec">
+        <h2 hidden>Наши особенности</h2>
+        <ul class="our-spec-list list">
+          <li class="our-spec-item">
+            <h3 class="our-spec-title">Внимание к деталям</h3>
+            <p class="our-spec-desc">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
-            <h3>Пунктуальность</h3>
-            <p>
+          <li class="our-spec-item">
+            <h3 class="our-spec-title">Пунктуальность</h3>
+            <p class="our-spec-desc">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
-            <h3>Планирование</h3>
-            <p>
+          <li class="our-spec-item">
+            <h3 class="our-spec-title">Планирование</h3>
+            <p class="our-spec-desc">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
-            <h3>Современные технологии</h3>
-            <p>
+          <li class="our-spec-item">
+            <h3 class="our-spec-title">Современные технологии</h3>
+            <p class="our-spec-desc">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
           </li>
         </ul>
-      </div>
-      <!-- Блок Чем мы занимаемся -->
-      <section>
-        <h2>Чем мы занимаемся</h2>
+      </section>
+      <!-- Секция Чем мы занимаемся -->
+      <section class="our-activities">
+        <h2 class="our-activities-title">Чем мы занимаемся</h2>
 
-        <ul>
-          <li>
+        <ul class="our-activities-list list">
+          <li class="our-activities-item">
             <img
               src="images/image-01.jpg"
               alt="programer working his desk office"
@@ -96,7 +96,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="our-activities-item">
             <img
               src="images/image-02.jpg"
               alt="web ui designers are developing smartphones application"
@@ -104,7 +104,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="our-activities-item">
             <img
               src="images/image-03.jpg"
               alt="creative artist web design with working colour selection graphic tablet"
@@ -115,49 +115,50 @@
         </ul>
       </section>
       <!-- Секция Наша команда -->
-      <section>
-        <h2>Наша команда</h2>
+      <section class="our-team">
+        <h2 class="our-team-title">Наша команда</h2>
 
-        <ul>
-          <li>
+        <ul class="our-team-list list">
+          <li class="our-team-item">
             <img
+              class="team-member-photo"
               src="images/ihor.jpg"
               alt="Ihor Demyanenko photo"
               width="270"
               height="260"
             />
-            <h3>Игорь Демьяненко</h3>
-            <p lang="en">Product Designer</p>
+            <h3 class="team-member-name">Игорь Демьяненко</h3>
+            <p class="team-member-title" lang="en">Product Designer</p>
           </li>
-          <li>
+          <li class="our-team-item">
             <img
               src="images/olga.jpg"
               alt="Olga Repina photo"
               width="270"
               height="260"
             />
-            <h3>Ольга Репина</h3>
-            <p lang="en">Frontend Developer</p>
+            <h3 class="team-member-name">Ольга Репина</h3>
+            <p class="team-member-title" lang="en">Frontend Developer</p>
           </li>
-          <li>
+          <li class="our-team-item">
             <img
               src="images/nikolay.jpg"
               alt="Nikolay Tarasov photo"
               width="270"
               height="260"
             />
-            <h3>Николай Тарасов</h3>
-            <p lang="en">Marketing</p>
+            <h3 class="team-member-name">Николай Тарасов</h3>
+            <p class="team-member-title" lang="en">Marketing</p>
           </li>
-          <li>
+          <li class="our-team-item">
             <img
               src="images/michail.jpg"
               alt="Michail Ermakov photo"
               width="270"
               height="260"
             />
-            <h3>Михаил Ермаков</h3>
-            <p lang="en">UI Designer</p>
+            <h3 class="team-member-name">Михаил Ермаков</h3>
+            <p class="team-member-title" lang="en">UI Designer</p>
           </li>
         </ul>
       </section>
