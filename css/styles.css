@@ -6,6 +6,7 @@
 /*цвет бека херо и футера #2F303A */
 /*цвет бека нашей команды #F5F4FA */
 /*цвет шрифта в адресе футера*/
+/*Цвет бордера на карточке в Портфолио*/
 /*Шрифт логотипа WebStudio - Raleway*/
 
 :root {
@@ -17,6 +18,7 @@
   --hero-footer-bground: #2f303a;
   --team-section-bground: #f5f4fa;
   --footer-adr-color: rgba(255, 255, 255, 0.6);
+  --border-color: #eeeeee;
   --logo-font: 'Raleway', sans-serif;
 }
 body {
@@ -35,6 +37,8 @@ body a {
 }
 .address {
   font-style: normal;
+}
+.current {
 }
 /*=========HEADER========*/
 .topline {
@@ -62,6 +66,9 @@ body a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.menu-nav .link.current {
+  color: var(--accent-color);
 }
 .menu-nav a {
   color: var(--title-text-color);
@@ -231,3 +238,58 @@ body a {
   letter-spacing: 0.03em;
 }
 /*======END FOOTER=========*/
+/*======PORTFOLIO==========*/
+.filter-list {
+  position: absolute;
+  width: 611px;
+  height: 54px;
+  left: 495px;
+  top: 174px;
+}
+.filter-list-item {
+  display: inline-block;
+}
+.filter-btn {
+  font-family: inherit;
+  background-color: var(--team-section-bground);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  border: none;
+}
+.filter-btn-text {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.filter-btn-text:hover .filter-btn-text:focus p {
+  color: var(--primary-white-color);
+}
+/*---список карточек---*/
+.cadrs-list-item {
+  background: va(--primary-white-color);
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+.cards-project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.cards-project-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--prime-text-color);
+}
+/*=====PORTFOLIO END=======*/

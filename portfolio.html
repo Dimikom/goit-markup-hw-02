@@ -24,9 +24,9 @@
         <!-- Главная навигация -->
         <nav>
           <ul class="menu-nav link">
-            <li><a href="index.html">Студия</a></li>
+            <li><a href="./index.html">Студия</a></li>
             <li>
-              <a href="portfolio.html">Портфолио</a>
+              <a  class="link current" href="./portfolio.html">Портфолио</a>
             </li>
             <li>
               <a href="">Контакты</a>
@@ -35,39 +35,39 @@
         </nav>
 
         <ul>
-          <li class="contact-email link">
+          <li class="contact-email list">
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="contact-tel">
+          <li class="contact-tel list">
             <a href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <!--секция фильтров-->
+      <!--секция фильтров и карточки-->
       <section>
         <h1 hidden>Наши проекты</h1>
-        <ul>
-          <li>
-            <button type="button">Все</button>
+        <ul class="filter-list list">
+          <li class="filter-list-item">
+            <button class="filter-btn" type="button"><p class="filter-btn-text">Все</p></button>
           </li>
-          <li>
-            <button type="button">Веб-сайты</button>
+          <li class="filter-list-item">
+            <button class="filter-btn" type="button"><p class="filter-btn-text">Веб-сайты</p></button>
           </li>
-          <li>
-            <button type="button">Приложения</button>
+          <li class="filter-list-item">
+            <button class="filter-btn" type="button"><p class="filter-btn-text">Приложения</p></button>
           </li>
-          <li>
-            <button type="button">Дизайн</button>
+          <li class="filter-list-item">
+            <button class="filter-btn" type="button"><p class="filter-btn-text">Дизайн</p></button>
           </li>
-          <li>
-            <button type="button">Маркетинг</button>
+          <li class="filter-list-item">
+            <button class="filter-btn" type="button"><p class="filter-btn-text">Маркетинг</p></button>
           </li>
         </ul>
-
-        <ul>
-          <li>
+        <!-- Список карточек -->
+        <ul class="cards-list list">
+          <li class="cadrs-list-item">
             <a href="">
               <img
                 src="./images/technokryak.jpg"
@@ -75,11 +75,11 @@
                 width="370"
                 height="294"
               />
-              <h3>Технокряк</h3>
-              <p>Веб-сайт</p>
+              <h3 class="cards-project-name">Технокряк</h3>
+              <p class="cards-project-type">Веб-сайт</p>
             </a>
           </li>
-          <li>
+          <li class="cadrs-list-item">
             <a href="">
               <img
                 src="./images/basketball-poster.jpg"
@@ -87,11 +87,13 @@
                 width="370"
                 height="294"
               />
-              <h3>Постер New Orlean vs Golden Star</h3>
-              <p>Дизайн</p>
+              <h3 class="cards-project-name">
+                Постер New Orlean vs Golden Star
+              </h3>
+              <p class="cards-project-type">Дизайн</p>
             </a>
-          </li>
-          <li>
+          </li class="cadrs-list-item">
+          <li class="cadrs-list-item">
             <a href="">
               <img
                 src="./images/restaurant-seafood.jpg"
@@ -99,14 +101,12 @@
                 width="370"
                 height="294"
               />
-              <h3>Ресторан Seafood</h3>
-              <p>Приложение</p>
+              <h3 class="cards-project-name">Ресторан Seafood</h3>
+              <p class="cards-project-type">Приложение</p>
             </a>
           </li>
-        </ul>
-
-        <ul>
-          <li>
+        
+          <li class="cadrs-list-item">
             <a href="">
               <img
                 src="./images/project-prime.jpg"
@@ -114,11 +114,11 @@
                 width="370"
                 height="294"
               />
-              <h3>Проект Prime</h3>
-              <p>Маркетинг</p>
+              <h3 class="cards-project-name">Проект Prime</h3>
+              <p class="cards-project-type">Маркетинг</p>
             </a>
           </li>
-          <li>
+          <li class="cadrs-list-item">
             <a href="">
               <img
                 src="./images/project-boxes.jpg"
@@ -126,11 +126,11 @@
                 width="370"
                 height="294"
               />
-              <h3>Проект Boxes</h3>
-              <p>Приложение</p>
+              <h3 class="cards-project-name">Проект Boxes</h3>
+              <p class="cards-project-type">Приложение</p>
             </a>
           </li>
-          <li>
+          <li class="cadrs-list-item">
             <a href="">
               <img
                 src="./images/inspiration.jpg"
@@ -138,13 +138,12 @@
                 width="370"
                 height="294"
               />
-              <h3>Inspiration has no Borders</h3>
-              <p>Веб-сайт</p>
+              <h3 class="cards-project-name">Inspiration has no Borders</h3>
+              <p class="cards-project-type">Веб-сайт</p>
             </a>
           </li>
-        </ul>
-        <ul>
-          <li>
+       
+          <li class="cadrs-list-item">
             <a href="">
               <img
                 src="./images/limited-edition.jpg"
@@ -152,11 +151,11 @@
                 width="370"
                 height="294"
               />
-              <h3>Издание Limited Edition</h3>
-              <p>Дизайн</p>
+              <h3 class="cards-project-name">Издание Limited Edition</h3>
+              <p class="cards-project-type">Дизайн</p>
             </a>
           </li>
-          <li>
+          <li class="cadrs-list-item">
             <a href="">
               <img
                 src="./images/project-lab.jpg"
@@ -164,11 +163,11 @@
                 width="370"
                 height="294"
               />
-              <h3>Проект LAB</h3>
-              <p>Маркетинг</p>
+              <h3 class="cards-project-name">Проект LAB</h3>
+              <p class="cards-project-type">Маркетинг</p>
             </a>
           </li>
-          <li>
+          <li class="cadrs-list-item">
             <a href="">
               <img
                 src="./images/growing-business.jpg"
@@ -176,15 +175,14 @@
                 width="370"
                 height="294"
               />
-              <h3>Growing Business</h3>
-              <p>Приложение</p>
+              <h3 class="cards-project-name">Growing Business</h3>
+              <p class="cards-project-type">Приложение</p>
             </a>
           </li>
         </ul>
       </section>
     </main>
-    <!-- Подвал страницы -->
-
+    
     <!-- Подвал страницы -->
     <footer class="site-bottom">
       <!-- Логотип WebStudio -->
