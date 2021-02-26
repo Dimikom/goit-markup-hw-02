@@ -42,7 +42,6 @@ body a {
 }
 /*=========HEADER========*/
 .topline {
-  position: absolute;
   width: 1600px;
   height: 80px;
   left: 0px;
@@ -259,22 +258,13 @@ body a {
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
-  border: none;
-}
-.filter-btn-text {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.filter-btn-text:hover .filter-btn-text:focus p {
   color: var(--primary-white-color);
+  /* border: none; */
+  outline: none;
 }
 /*---список карточек---*/
 .cadrs-list-item {
-  background: va(--primary-white-color);
+  background: var(--primary-white-color);
   border: 1px solid var(--border-color);
   box-sizing: border-box;
 }
