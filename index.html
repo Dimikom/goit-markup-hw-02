@@ -10,11 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link href="css/normalize.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Шапка сайта -->
     <header>
       <div class="topline">
         <!-- Логотип WebStudio -->
@@ -26,9 +30,11 @@
           <ul class="menu-nav link">
             <li><a href="index.html">Студия</a></li>
             <li>
-              <a href="./portfolio.html">Портфолио</a>
+              <a href="portfolio.html">Портфолио</a>
             </li>
-            <li>Контакты</li>
+            <li>
+              <a href="">Контакты</a>
+            </li>
           </ul>
         </nav>
 
@@ -44,10 +50,10 @@
     </header>
     <!-- Основной контент страницы -->
     <main>
-      <!-- Секция Решения для бизнеса к кнопкой Заказать -->
-      <section class="slider">
-        <h1 class="slider-slogan">Эффективные решения для вашего бизнеса</h1>
-        <button class="basic-btn" type="button">Заказать услугу</button>
+      <!-- Секция Hero - Решения для бизнеса c кнопкой Заказать -->
+      <section class="hero">
+        <h1 class="hero-slogan">Эффективные решения для вашего бизнеса</h1>
+        <button class="hero-btn" type="button">Заказать услугу</button>
       </section>
       <!-- Секция особенностей - здесь 4 особенности -->
       <section class="our-spec">
@@ -165,13 +171,20 @@
     </main>
 
     <!-- Подвал страницы -->
-    <footer>
-      <a href="" lang="en">WebStudio</a>
-      <address>
-        <ul>
-          <li>г. Киев, пр-т Леси Украинки, 26</li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <footer class="site-bottom">
+      <!-- Логотип WebStudio -->
+      <a href="" lang="en" class="bottom-webstudio link">
+        <span class="web">Web</span>Studio</a
+      >
+      <address class="address-box">
+        <ul class="address-box-list list">
+          <li class="address-line">г. Киев, пр-т Леси Украинки, 26</li>
+          <li class="footer-email link">
+            <a href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li class="footer-tel link">
+            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>
